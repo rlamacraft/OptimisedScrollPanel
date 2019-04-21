@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Windowed Console</title>
+    <style>
+      html, body {
+        background-color: #e4e4e4;
+        height: 100%;
+        width: 100%;
+      }
+      /*#wrapper {
+        display: flex;
+        height: 6em;
+      }
+      wc-container {
+        height: 7em;
+        flex-basis: 50%;
+      }*/
+      #wrapper {
+        display: block;
+        width: 50%;
+        height: 10em;
+      }
+      wc-container {
+
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import {setup} from './customElement/osp-container/main.js';
+      setup();
+    </script>
+    <div id="wrapper">
+      <osp-container height=10></osp-container>
+    </div>
+  </body>
+</html>
